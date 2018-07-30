@@ -20,6 +20,8 @@ function deepestChild () {
   
   const list = document.querySelectorAll('#grand-node')
   for (let i = 0; i < list.length; i++) {
-    return list[i]
+    if (list[i].textContent === "boo!") {
+      return list[i]
+    }
   }
 }
