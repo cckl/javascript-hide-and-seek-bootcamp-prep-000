@@ -19,6 +19,7 @@ function deepestChild () {
   // return document.querySelector('#grand-node div div div div')
   
   const list = document.querySelectorAll('#grand-node')
+  return list.length
   const lastItem = list.length-1
   return list[lastItem]
 }
