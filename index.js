@@ -19,9 +19,5 @@ function deepestChild () {
   // return document.querySelector('#grand-node div div div div')
   
   const list = document.querySelectorAll('#grand-node')
-  for (let i = 0; i < list.length; i++) {
-    if (list[i].textContent === "boo!") {
-      return list[i]
-    }
-  }
+  return list.length -1
 }
